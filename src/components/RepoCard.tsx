@@ -1,4 +1,4 @@
-export default function RepoCard({img, link}) {
+export default function RepoCard({img: string, link: string}) {
   return(
    <>
     <a href={link} target="_blank"> 
