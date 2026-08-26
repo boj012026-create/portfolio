@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises'
 import ghAPI from './ghAPI.ts';
 
+// all path's are from project root
 const fileName: string = "repoStats"
 const path: string = "./src/assets/json"
 const filePath: string = `${path}/${fileName}.json`
