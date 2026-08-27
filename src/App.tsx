@@ -10,13 +10,17 @@ function App() {
   const sBoardImg: string = soundBoardthumb
   console.log("repoJson")
   console.log(repoJson)
+  const thumbPath: string = './src/assets/img/thumb'
 
   return (
     <>
     <h2 className="text-4xl">Repo</h2>
     <RepoCard img={sBoardImg} link={sBoardURL}/>
     { repoJson.map( repo => (
-     <RepoCard id={repo.id} img={repo.owner.avatar_url} link={repo.homepage}/>
+      <>
+      <p>{ `${ thumbPath }/${ repo.name }.jpg` }</p>
+     <RepoCard id={repo.id} img={`${thumbPath}/${repo.name}.jpg`} link={repo.homepage}/>
+     </>
       ))
     }
     </>
