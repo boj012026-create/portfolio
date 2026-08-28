@@ -2,24 +2,27 @@ import soundBoardthumb from './assets/thumbnails/soundboard.jpg'
 import RepoCard from './components/RepoCard'
 import './App.css'
 import repoJson from './assets/json/repoStats.json'
-
-
+import thumbImg from './services/thumbImg.ts'
 
 function App() {
   const sBoardURL: string = "https://boj012026-create.github.io/DaftPunkSoundboard/";
-  const sBoardImg: string = soundBoardthumb
-  console.log("repoJson")
-  console.log(repoJson)
-  const thumbPath: string = './src/assets/img/thumb'
+  console.log("thumb in app", thumbImg)
+
+  const ob: Record<string, string> = {
+    test: "hello! test"
+  }
+
+  console.log("ob Record made in app", ob)
 
   return (
     <>
     <h2 className="text-4xl">Repo</h2>
-    <RepoCard img={sBoardImg} link={sBoardURL}/>
+    <RepoCard img={soundBoardthumb} link={sBoardURL}/>
     { repoJson.map( repo => (
       <>
-      <p>{ `${ thumbPath }/${ repo.name }.jpg` }</p>
-     <RepoCard id={repo.id} img={`${thumbPath}/${repo.name}.jpg`} link={repo.homepage}/>
+      <p>repo name from JSON import{repo.name}</p>
+     <RepoCard id={repo.id} img={thumbImg[`${repo.name}.jpg`]} link={repo.homepage}/>
+     
      </>
       ))
     }
