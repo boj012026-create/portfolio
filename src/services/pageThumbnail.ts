@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer';
+import sharp from 'sharp'
 
 export default async function pageThumbnail(repos: Array<any>) {
   console.log('Starting Browser');
@@ -10,11 +11,17 @@ export default async function pageThumbnail(repos: Array<any>) {
       if(repo.homepage == null) { continue }; 
       console.log(repo.homepage);
       await page.goto(repo.homepage);
-      await page.screenshot({
-	path: `./src/assets/img/thumb/${repo?.name}.jpg`,
-	type: 'jpeg',
-	quality: 80
+     const imageBuffer = await page.screenshot({
+	//path: `./src/assets/img/thumb/${repo?.name}.png`,
+	type: 'png',
+	//quality: 80,
+	omitBackground: true
       });
+      await sharp(imageBuffer)
+	.trim()
+	.flatten({ background: '#ffffff'})
+	.jpeg({quality: 85})
+	.toFile(`./src/assets/img/thumb/${repo?.name}.jpg`)
     } catch (error: unknown){
       if (error instanceof Error) {
 	 console.error('Screenshot failure', error); 
