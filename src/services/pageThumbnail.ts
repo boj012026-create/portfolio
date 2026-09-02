@@ -5,12 +5,15 @@ export default async function pageThumbnail(repos: Array<any>) {
   console.log('Starting Browser');
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+  await page.setViewport( {width: 1080, height: 1024})
 
   for (const repo of repos) {
     try {
       if(repo.homepage == null) { continue }; 
       console.log(repo.homepage);
-      await page.goto(repo.homepage);
+      await page.goto(repo.homepage, {
+	waitUntil: 'networkidle0'
+      });
      const imageBuffer = await page.screenshot({
 	//path: `./src/assets/img/thumb/${repo?.name}.png`,
 	type: 'png',
