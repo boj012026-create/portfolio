@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises'
-import ghAPI from './ghAPI.ts';
+import ghAPI from '../services/ghAPI.ts';
 import pageThumbnail from './pageThumbnail.ts'
 
 // all path's are from project root

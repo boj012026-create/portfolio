@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "update": "vite-node ./src/services/updateRepoLinks.ts",
+    "update": "vite-node ./src/scripts/updateRepoLinks.ts",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
