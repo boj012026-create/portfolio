@@ -16,12 +16,14 @@ function getJson(url: string) {
     })
 }
 
-
 const ghAPI: any = {
   url: "https://api.github.com",
   user: "/boj012026-create",
   repos: async function() {
     return await getJson(`${this.url}/users${this.user}/repos`)
+  },
+  repo: async function(repoName: string) {
+    return await getJson(`${this.url}/users${this.user}/${repoName}`)
   }
 };
 
