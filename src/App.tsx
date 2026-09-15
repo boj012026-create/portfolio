@@ -1,11 +1,11 @@
 import './App.css'
-import RepoContainer from './components/RepoContainer'
+import RepoIterator from './components/RepoIterator'
 
 function App() {
 
   return (
   <>
-    <RepoContainer/>
+    <RepoIterator/>
   </>
   )
 }
