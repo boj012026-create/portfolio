@@ -2,7 +2,7 @@ import thumbImg from '../scripts/thumbImg.ts'
 import repoJson from '../assets/json/repoStats.json'
 import RepoCard from './RepoCard'
 
-export default function RepoContainer() {
+export default function RepoIterator() {
 
   return(
     <>
