@@ -1,12 +1,14 @@
 import './App.css'
+import { Outlet } from 'react-router-dom'
+import NavBar from  './components/NavBar.tsx'
 //import RepoIterator from './components/RepoIterator'
-import Carousel from './components/Carousel'
 
 function App() {
 
   return (
   <>
-   <Carousel />
+  <NavBar/>
+  <Outlet/>
   </>
   )
 }
