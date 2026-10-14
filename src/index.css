@@ -1,1 +1,6 @@
+:root { /*                          light   dark*/
+    background-color:   light-dark( gold,   black);
+    color:              light-dark( black,    gold);
+    transition: 2s;
+}
 @import "tailwindcss"
