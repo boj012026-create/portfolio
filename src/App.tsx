@@ -7,8 +7,15 @@ function App() {
 
   return (
   <>
+  <header>
   <NavBar/>
+  </header>
+  <main>
   <Outlet/>
+  </main>
+  <footer>
+  <h2>footer</h2>
+  </footer>
   </>
   )
 }
