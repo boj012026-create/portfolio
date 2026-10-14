@@ -4,9 +4,10 @@ import ThemeSwitchBtn from './ThemeSwitchBtn.tsx'
 export default function navBar() {
   return (
     <>
-    <nav>
+    <nav className="flex gap-1.5">
       <ThemeSwitchBtn/>
-      <Link to='/portfolio/home'>Home</Link>
+      <Link to='/portfolio/home'>Hjem</Link>
+      <Link to='/portfolio/projects'>Prosjekt</Link>
     </nav>
     </>
   )
