@@ -5,7 +5,11 @@ export default function Projects() {
   return (
     <>
     <h1>Portfolio</h1>
-    <RepoIterator/>
+    <section
+      className="">
+      <RepoIterator/>
+    </section>
+
     </>
   )
 }
