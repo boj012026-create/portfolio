@@ -6,7 +6,7 @@ export default function navBar() {
     <>
     <nav className="flex gap-1.5">
       <ThemeSwitchBtn/>
-      <Link to='/home'>Hjem</Link>
+      <Link to='/'>Hjem</Link>
       <Link to='/projects'>Prosjekt</Link>
     </nav>
     </>
