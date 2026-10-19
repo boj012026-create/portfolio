@@ -6,7 +6,7 @@ export default function Projects() {
     <>
       <h1
         className="text-5xl"
-      >Portfolio</h1>
+      >Prosjekt</h1>
     <section
       className="flex flex-wrap m-5"
       >
