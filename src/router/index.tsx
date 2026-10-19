@@ -6,7 +6,7 @@ import { createBrowserRouter } from 'react-router-dom'
  * Links Pages to urls
  */
 export const router = createBrowserRouter([{
-  path: '/portfolio', element: <App />,
+  path: '/', element: <App />,
     children: [
       {path: 'home', element: <Home />},
       {path: 'projects', element: <Projects />}
