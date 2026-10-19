@@ -8,7 +8,7 @@ import { createBrowserRouter } from 'react-router-dom'
 export const router = createBrowserRouter([{
   path: '/', element: <App />,
     children: [
-      {path: 'home', element: <Home />},
+      {index: true, element: <Home />},
       {path: 'projects', element: <Projects />}
     ]},
   {errorElement: <h1>Routing Error</h1>},
