@@ -1,1 +1,38 @@
-@import "tailwindcss"
+@import "tailwindcss";
+:root {
+    
+    /* Colors:
+     * - surface: Cards and nav
+     * - primary: Links and Buttons
+     * - secondary: Higligts and tags
+     */ 
+    /*Ion*/
+    --background-color: light-dark(#F7F9FF, #0B1020);
+    --text-color: light-dark(#12172B, #E8ECFA);
+
+    --surface-color: light-dark(#EAEFFC, #151B33);
+    --primary-color: light-dark(#0B5CAD, #5CC8FF);
+    --secondary-color: light-dark(#B34700, #FFB454);
+    /*Aurora*/
+/*
+    background-color: light-dark(#FBFAFF, #0F0B1E);
+    text: light-dark(#1B1438, #EFEAFB);
+
+    --surface: light-dark(#F0ECFA, #1A1530);
+    --primary-color: light-dark(#5B3FD6, #B39DFF);
+    --secondary-color: light dark(#8A5A00, #FFD166);
+    */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a.active {
+    color: var(--primary-color);
+}
+
+a.pending {
+    color: var(--secondary-color);
+}
