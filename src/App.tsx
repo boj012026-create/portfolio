@@ -1,4 +1,6 @@
 import './App.css'
+import './index.css'
+import ThemeSwitchBtn from './components/ThemeSwitchBtn.tsx'
 import { Outlet } from 'react-router-dom'
 import NavBar from  './components/NavBar.tsx'
 //import RepoIterator from './components/RepoIterator'
@@ -7,10 +9,13 @@ function App() {
 
   return (
   <>
-  <header className="h-1/5 flex justify-end">
+  <header className=" bg-[var(--surface-color)] mx-5 flex justify-between">
+  <ThemeSwitchBtn/>
   <NavBar/>
   </header>
-  <main className="h-4/5">
+  <main className="bg-[var(--baki)]/60 mx-10
+  lg:mx-20 px-10
+  ">
   <Outlet/>
   </main>
   <footer
@@ -18,7 +23,7 @@ function App() {
       flex
       flex-wrap
       gap-2
-      bg-blue-400/20
+      bg-[var(--surface-color)]
       ">
       <a href="https://www.linkedin.com/in/jan-olav-berg-a90734b3/" target="_blank">LinkedIn</a>
       <a href="https://github.com/boj012026-create" target="_blank"> GitHub</a>
