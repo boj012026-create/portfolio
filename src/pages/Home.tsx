@@ -25,19 +25,19 @@ lg:max-w-120">
 bachelor i datateknologi (UiB)
   </BulletPoint>
   <BulletPoint icon="🚀">
-    fullstack-course (Jobloop&gt;Kodehodet)
+    fullstack-kurs (Jobloop&gt;Kodehodet)
   </BulletPoint>
   <BulletPoint icon="👔">
-     My background combines theoretical knowledge with hands-on experience in industry-relevant technology. My strategy is to find the ideal balance between progress and quality, using best-practice conventions like TDD, DRY, SOLID, and Commitizen to write clean code.
+Min bakgrunn kombinerer teoretisk kunnskap med praktisk erfaring innen bransjerelevant teknologi. Min strategi er å finne den ideelle balansen mellom fremdrift og kvalitet. Jeg bruker beste praksis og konvensjoner som TDD, DRY, SOLID og Commitizen for å skrive ren og vedlikeholdbar kode.
   </BulletPoint>
   <BulletPoint icon="👥">
-     With over 15 years of retail experience, customer service and team leadership have trained me to stay calm under pressure, communicate clearly, and resolve unpredictable challenges in real time.
+Med over 15 års erfaring fra detaljhandelen har kundeservice og teamledelse lært meg å holde hodet kaldt under press. Jeg kommuniserer tydelig og løser uforutsette utfordringer i sanntid.
   </BulletPoint>
   <BulletPoint icon="✨">
-     I am looking for an internship or my first permanent role within an engaged development team in and around Bergen. I am particularly passionate about AI, design, user experience, and optimization.
+Jeg søker nå en praksisplass eller min første faste stilling i et engasjert utviklerteam i eller rundt Bergen. Jeg brenner spesielt for kunstig intelligens, design, brukeropplevelse (UX) og optimalisering.
   </BulletPoint>
   <BulletPoint icon="💬">
-    Feel free to reach out for an informal chat, either virtually or in person!
+Ta gjerne kontakt for en uformell prat, enten digitalt eller i Bergen!
   </BulletPoint>
 </article>
 </section>
