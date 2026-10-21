@@ -26,6 +26,7 @@ function App() {
       flex flex-wrap gap-2 mt-5 
       justify-center
       bg-[var(--surface-color)]
+      lg: justify-start p-5
       ">
       <a href="https://www.linkedin.com/in/jan-olav-berg-a90734b3/" target="_blank">LinkedIn</a>
       <a href="https://github.com/boj012026-create" target="_blank"> GitHub</a>
