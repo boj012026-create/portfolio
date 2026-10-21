@@ -15,8 +15,9 @@ function App() {
   <ThemeSwitchBtn/>
   <NavBar/>
   </header>
-  <main className="bg-[var(--baki)]/60 mx-10
-  lg:mx-20 px-10
+  <main className="overflow-scroll
+  bg-[var(--background-color)]
+  lg:mx-20 
   ">
   <Outlet/>
   </main>
