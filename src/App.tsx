@@ -29,7 +29,7 @@ function App() {
       ">
       <a href="https://www.linkedin.com/in/jan-olav-berg-a90734b3/" target="_blank">LinkedIn</a>
       <a href="https://github.com/boj012026-create" target="_blank"> GitHub</a>
-      <a href="https://www.thingiverse.com/martialcart/designs" target="_blank">3D design</a>
+      <a href="https://www.thingiverse.com/martialcart/designs" target="_blank">3D_design</a>
   </footer>
   </>
   )
