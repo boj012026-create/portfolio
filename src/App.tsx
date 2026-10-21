@@ -9,7 +9,9 @@ function App() {
 
   return (
   <>
-  <header className=" bg-[var(--surface-color)] mx-5 flex justify-between">
+  <header className="
+  bg-[var(--surface-color)]
+  mx-5 flex justify-between">
   <ThemeSwitchBtn/>
   <NavBar/>
   </header>
