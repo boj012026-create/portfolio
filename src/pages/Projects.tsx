@@ -8,7 +8,8 @@ export default function Projects() {
         className="text-5xl my-5"
       >Prosjekt</h1>
     <section
-      className="flex flex-wrap m-5"
+      className="flex flex-wrap
+      lg:grid grid-cols-2 gap-20"
       >
       <RepoCard
         id="camping-frontend"
