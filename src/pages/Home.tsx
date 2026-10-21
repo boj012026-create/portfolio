@@ -4,7 +4,10 @@ export default function Home() {
   return (
     <>
       <img src="https://readme-typing-svg.demolab.com?font=Bitcount+Single&size=26&pause=1000&color=000AF7&center=true&vCenter=true&width=435&lines=Junior+Full-Stack+Developer" alt="Typing SVG"/>
-<section className="bg-[var(--surface-color)] gap-6 flex flex-col justify-center sm:flex-row-reverse">
+      
+<section className="bg-[var(--surface-color)]
+p-5 gap-6 flex flex-col items-start justify-center w-fit
+lg:flex-row-reverse">
 <figure>
     <img
       src="/profile-img.jpg"
