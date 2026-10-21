@@ -23,9 +23,8 @@ function App() {
   </main>
   <footer
     className="
-      flex
-      flex-wrap
-      gap-2
+      flex flex-wrap gap-2 mt-5 
+      justify-center
       bg-[var(--surface-color)]
       ">
       <a href="https://www.linkedin.com/in/jan-olav-berg-a90734b3/" target="_blank">LinkedIn</a>
