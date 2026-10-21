@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <>
       <h1
-        className="text-5xl"
+        className="text-5xl my-5"
       >Prosjekt</h1>
     <section
       className="flex flex-wrap m-5"
