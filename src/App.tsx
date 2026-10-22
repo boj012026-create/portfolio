@@ -10,13 +10,13 @@ function App() {
   return (
   <>
   <header className="
-  bg-[var(--surface-color)]
+  bg-color-surface
   mx-5 flex justify-between">
   <ThemeSwitchBtn/>
   <NavBar/>
   </header>
   <main className="overflow-scroll
-  bg-[var(--background-color)]
+  bg-color-background
   lg:mx-20 
   ">
   <Outlet/>
@@ -25,7 +25,7 @@ function App() {
     className="
       flex flex-wrap gap-2 mt-5 
       justify-center
-      bg-[var(--surface-color)]
+      bg-color-surface
       lg: justify-start p-5
       ">
       <a href="https://www.linkedin.com/in/jan-olav-berg-a90734b3/" target="_blank">LinkedIn</a>
