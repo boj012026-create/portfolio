@@ -13,7 +13,7 @@ export default function Projects() {
       <RepoCard
         id="camping-frontend"
         title="Camping"
-        description=""
+        description="Fiktiv hytte oversikt generert med React data fra hodeløs wordpress"
       />
       <RepoCard
         id="DaftPunkSoundboard"
