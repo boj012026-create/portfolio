@@ -22,7 +22,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode}) {
     prevThemeRef.current = theme
   }
   /**
-   * returns 'sheme-" in front of @title 
+   * returns 'scheme-" in front of @title 
    */
   function scheme(title: string) {
     return `scheme-${title}`
