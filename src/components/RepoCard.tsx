@@ -6,7 +6,8 @@ export default function RepoCard({id, title, description}: any) {
   const gitHubUrl = `https://github.com/boj012026-create/${id}`
   return(
    <article id={id}
-      className="flex flex-col gap-3">
+      className="flex flex-col gap-3 p-5 bg-[var(--surface-color)]
+      sm:p-10">
       <div className="flex items-end">
         <h3 className="text-4xl">{title}</h3>
         <a href={gitHubUrl} target="_blank"
