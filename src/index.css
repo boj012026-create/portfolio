@@ -1,41 +1,27 @@
+:root {
+  /* Colors: 
+   * - surface: Cards and nav 
+   * - primary: Links and Buttons 
+   * - secondary: Higligts and tags
+   */  
+    --background-color: #b8f2;
+    --surface-color: #908CCA50;
+    --primary-color: #5B3FD6;
+    --secondary-color:  #8A5A00;
+}
+
 @import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
-  --color-background: var(--background-color);
+  --color-background:  var(--background-color);
   --color-text: var(--text-color);
   --color-surface: var(--surface-color);
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
 }
-/* :root, */
-/* :root[color-scheme="light"] { */
-/*     /* Colors: */
-/*      * - surface: Cards and nav */
-/*      * - primary: Links and Buttons */
-/*      * - secondary: Higligts and tags */
-/*      */  */
-/*     --background-color: 0F0B1Em; */
-/*     --text-color: blue; */
-/**/
-/*     --surface-color: #F0ECFA; */
-/*     --primary-color: #5B3FD6; */
-/*     --secondary-color:  #8A5A00; */
-/* } */
-/**/
-/* :root[color-scheme="dark"] { */
-/*     --background-color: #0F0B1E; */
-/*     --text-color: #EFEAFB; */
-/**/
-/*     --surface-color: #1A1530; */
-/*     --primary-color: #B39DFF; */
-/*     --secondary-color:  #FFD166; */
-/* } */
 
 :root {
     background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 a.active {
