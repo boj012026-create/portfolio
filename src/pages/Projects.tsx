@@ -8,7 +8,7 @@ export default function Projects() {
     <Header title="Prosjekt" fontSize={70}/>
     <section
       className="flex flex-wrap
-      lg:grid grid-cols-2 gap-20"
+      sm:grid grid-cols-2 gap-20"
       >
       <RepoCard
         id="camping-frontend"

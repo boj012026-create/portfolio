@@ -11,13 +11,15 @@ function App() {
   <>
   <header className="
   bg-color-surface
-  mx-5 flex justify-between">
+  mx-5 flex justify-between
+  sm:mx-10 text-2xl
+  ">
   <ThemeSwitchBtn/>
   <NavBar/>
   </header>
   <main className="overflow-scroll
   bg-color-background
-  lg:mx-20 
+  sm:mx-20 text-2xl
   ">
   <Outlet/>
   </main>
@@ -26,7 +28,7 @@ function App() {
       flex flex-wrap gap-2 mt-5 
       justify-center
       bg-color-surface
-      lg: justify-start p-5
+      sm:mx-10 text-2xl justify-start p-5
       ">
       <a href="https://www.linkedin.com/in/jan-olav-berg-a90734b3/" target="_blank">LinkedIn</a>
       <a href="https://github.com/boj012026-create" target="_blank"> GitHub</a>

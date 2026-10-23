@@ -8,7 +8,7 @@ export default function Home() {
       
 <section className="bg-[var(--surface-color)]
 p-5 gap-6 flex flex-col items-start justify-center w-fit
-lg:flex-row-reverse">
+sm:flex-row-reverse">
 <figure>
     <img
       src="/profile-img.jpg"
@@ -16,12 +16,12 @@ lg:flex-row-reverse">
       className="
         rounded-2xl
         aspect-3/4
-        lg:max-w-80
+        sm:max-w-80
       "
     />
 </figure>
 <article className="flex flex-col gap-3
-lg:max-w-120">
+sm:max-w-120">
   <BulletPoint icon="📚">
 bachelor i datateknologi (UiB)
   </BulletPoint>
