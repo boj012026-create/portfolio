@@ -19,8 +19,12 @@ export default function Header({title, fontSize}: HeaderProp) {
 
     return (
         <>
-        <figure className="flex justify-center">
-          <img src={imgUri} alt={alt}/>
+        <figure className="flex justify-center
+        bg-[var(--background-color)]
+        mb-6
+        sm:mb-12
+        ">
+          <img  src={imgUri} alt={alt}/>
         </figure>
         </>
     )

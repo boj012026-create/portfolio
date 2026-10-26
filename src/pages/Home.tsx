@@ -7,7 +7,7 @@ export default function Home() {
     <Header title={"Junior Full-Stack Utvikler"} fontSize={26}/>
       
 <section className="bg-[var(--surface-color)]
-p-5 gap-6 flex flex-col items-start justify-center w-fit
+p-5 gap-6 flex flex-col items-start justify-center 
 sm:flex-row-reverse">
 <figure>
     <img

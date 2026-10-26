@@ -13,15 +13,15 @@ function App() {
     <div id="plasma"><p id="plasma-filter"> </p></div>
   </figure>
   <header className="
-  bg-color-surface
-  mx-5 flex justify-between
-  sm:mx-10 text-2xl
+  bg-[var(--surface-color)]
+  px-5 flex justify-between
+  sm:mx-20 text-2xl
   ">
   <ThemeSwitchBtn/>
   <NavBar/>
   </header>
   <main className="overflow-scroll
-  bg-color-background
+  bg-[var(--background-color)]
   sm:mx-20 text-2xl
   ">
   <Outlet/>
@@ -30,7 +30,7 @@ function App() {
     className="
       flex flex-wrap gap-2 mt-5 
       justify-center
-      bg-color-surface
+      bg-[var(--surface-color)]
       sm:mx-10 text-2xl justify-start p-5
       ">
       <a href="https://www.linkedin.com/in/jan-olav-berg-a90734b3/" target="_blank">LinkedIn</a>
