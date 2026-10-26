@@ -10,7 +10,7 @@ function App() {
   return (
   <>
   <figure id="plasma-container">
-    <div id="plasma"><p> </p></div>
+    <div id="plasma"><p id="plasma-filter"> </p></div>
   </figure>
   <header className="
   bg-color-surface

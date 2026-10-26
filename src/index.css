@@ -8,6 +8,10 @@
     --surface-color: #908CCA50;
     --primary-color: #5B3FD680;
     --secondary-color:  #8A5A0080;
+
+    /* plasma variables */
+    --s: -12%; /*start */ 
+    --e: -2%; /*end*/
 }
 
 @import "tailwindcss";
@@ -21,23 +25,36 @@
 }
 
 #plasma-container {
-    position: absolute;
-    width: 100dvw;
-    height: 100dvh;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
+}
 
+#plasma-filter {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
 }
 
 #plasma {
-    position: absolute;
+    /* position: absolute; */
     background-image: url("/plasma.jpg");
     background-repeat: true;
-    width: 300vw;
-    height: 300vh;
+    width: 115vw;
+    height: 115vh;
     overflow: hidden;
     opacity: 0.2 ;
     z-index: -1;
-    animation: dance 80s ease infinite alternate;
+    animation: patrol 180s linear infinite ;
+}
+
+@keyframes patrol {
+    0%      { transform: translateX(var(--s))    translateY(var(--s))    rotateZ(0deg)   scale(1);   }
+    15%     { transform: translateX(var(--s))    translateY(var(--e))    rotateZ(2deg)   scale(1.2); }
+    50%     { transform: translateX(var(--e))    translateY(var(--e))   rotateZ(0deg)       scale(1);   }
+    75%     { transform: translateX(var(--e))    translateY(var(--s))   rotateZ(2deg)   scale(1.2); }
+    100%    { transform: translateX(var(--s))    translateY(var(--s))    rotateZ(0deg)   scale(1);   }
 }
 
 @keyframes dance {
