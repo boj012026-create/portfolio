@@ -6,6 +6,7 @@ export default function navBar() {
     <nav className="flex gap-1.5">
       <NavLink to='/'>Hjem</NavLink>
       <NavLink to='/projects'>Prosjekt</NavLink>
+      <NavLink to='/tools'>Verktøy</NavLink>
     </nav>
     </>
   )

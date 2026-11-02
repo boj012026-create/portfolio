@@ -1,3 +1,4 @@
+import Tools from '../pages/Tools.tsx'
 import Home from '../pages/Home.tsx'
 import Projects from '../pages/Projects.tsx'
 import App from '../App.tsx'
@@ -9,7 +10,8 @@ export const router = createBrowserRouter([{
   path: '/', element: <App />,
     children: [
       {index: true, element: <Home />},
-      {path: 'projects', element: <Projects />}
+      {path: 'projects', element: <Projects />},
+      {path: 'tools', element: <Tools />}
     ]},
   {errorElement: <h1>Routing Error</h1>},
   {path: '*', element: <h1>404 not found</h1>}
