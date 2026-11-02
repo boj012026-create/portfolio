@@ -1,9 +1,11 @@
 import thumbImg from '../scripts/thumbImg.ts'
 
-export default function RepoCard({id, title, description}: any) {
+export default function RepoCard({id, account, pageUrl, title, description}: any) {
   const imgUrl = thumbImg[`${id}.jpg`]
-  const demoUrl = `https://boj012026-create.github.io/${id}/`
-  const gitHubUrl = `https://github.com/boj012026-create/${id}`
+  const mainAccount = "boj012026-create"
+  const user = account ? account : mainAccount
+  const demoUrl = pageUrl ? pageUrl : `https://${user}.github.io/${id}/`
+  const gitHubUrl = `https://github.com/${user}/${id}`
   return(
    <article id={id}
       className="flex flex-col gap-3 p-5 bg-[var(--surface-color)]
@@ -18,7 +20,7 @@ export default function RepoCard({id, title, description}: any) {
       className="hover:underline">
       <img src={imgUrl}
         alt={`screenshot image of ${title}'s webpage link`}
-      className=""/>
+      className="container"/>
     </a>
     <p className="text-2xl px-5">{description}</p>
    </article>
