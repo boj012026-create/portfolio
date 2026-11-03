@@ -1,4 +1,6 @@
 :root {
+    --icon-size: 70px;
+
   /* Colors: 
    * - surface: Cards and nav 
    * - primary: Links and Buttons 
@@ -24,6 +26,16 @@
   --color-secondary: var(--secondary-color);
 }
 
+/*Icon settings*/
+@layer components {
+    svg {
+        @apply text-blue-400 dark:text-yellow-400;
+        width: var(--icon-size);
+        height: var(--icon-size);
+    }
+}
+
+/*Plasma Background Settings*/
 #plasma-container {
     position: fixed;
     width: 100vw;
