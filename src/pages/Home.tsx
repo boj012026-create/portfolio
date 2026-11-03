@@ -1,5 +1,6 @@
 import BulletPoint from '../components/BulletPoint'
 import Header from '../components/Header'
+import { DiGit } from 'react-icons/di'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ sm:flex-row-reverse">
 </figure>
 <article className="flex flex-col gap-3
 sm:max-w-120">
+  <DiGit/>
   <BulletPoint icon="📚">
 bachelor i datateknologi (UiB)
   </BulletPoint>
